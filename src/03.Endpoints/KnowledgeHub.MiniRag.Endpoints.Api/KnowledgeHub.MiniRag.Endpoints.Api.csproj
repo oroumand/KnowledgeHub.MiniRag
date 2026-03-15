@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\01.Core\KnowledgeHub.MiniRag.Core.Applicaiton\KnowledgeHub.MiniRag.Core.Applicaiton.csproj" />
+    <ProjectReference Include="..\..\01.Core\KnowledgeHub.MiniRag.Core.Domain\KnowledgeHub.MiniRag.Core.Domain.csproj" />
+    <ProjectReference Include="..\..\02.Infras\KnowledgeHub.MiniRag.Infras.SqlServer\KnowledgeHub.MiniRag.Infras.SqlServer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+</Project>
