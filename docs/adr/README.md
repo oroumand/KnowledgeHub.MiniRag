@@ -11,3 +11,4 @@ and their consequences.
 - ADR-002: Use SQL Server as primary relational store
 - ADR-003: Use Qdrant as vector database for v1
 - ADR-004: Use OpenAI embeddings and chat models for RAG pipeline
+- ADR-005: Organize code by feature within architectural layers
