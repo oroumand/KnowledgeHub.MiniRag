@@ -12,3 +12,4 @@ and their consequences.
 - ADR-003: Use Qdrant as vector database for v1
 - ADR-004: Use OpenAI embeddings and chat models for RAG pipeline
 - ADR-005: Organize code by feature within architectural layers
+- ADR-006: Use DbSet directly in Application layer instead of Repository pattern
