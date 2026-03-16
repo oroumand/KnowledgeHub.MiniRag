@@ -10,4 +10,17 @@
     <ProjectReference Include="..\KnowledgeHub.MiniRag.Core.Domain\KnowledgeHub.MiniRag.Core.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Chat\Commands\" />
+    <Folder Include="Chat\Abstractions\" />
+    <Folder Include="Documents\Commands\" />
+    <Folder Include="Documents\Abstractions\" />
+    <Folder Include="Documents\Queries\" />
+    <Folder Include="Search\Abstractions\" />
+    <Folder Include="Search\Queries\" />
+    <Folder Include="Shared\Abstractions\AI\" />
+    <Folder Include="Shared\Abstractions\Abstractions\" />
+    <Folder Include="Shared\Abstractions\VectorStore\" />
+  </ItemGroup>
+
 </Project>

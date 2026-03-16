@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -18,6 +18,13 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Chat\Contracts\" />
+    <Folder Include="Chat\Endpoints\" />
+    <Folder Include="Search\Contracts\" />
+    <Folder Include="Search\Endpoints\" />
+    <Folder Include="Documents\Endpoints\" />
+    <Folder Include="Documents\Contracts\" />
+    <Folder Include="Shared\Extensions\" />
   </ItemGroup>
 
 </Project>

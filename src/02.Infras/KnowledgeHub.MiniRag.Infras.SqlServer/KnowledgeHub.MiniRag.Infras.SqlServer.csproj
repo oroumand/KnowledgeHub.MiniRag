@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Chat\AI\" />
+    <Folder Include="Documents\Persistence\Configurations\" />
+    <Folder Include="Search\VectorStore\" />
+    <Folder Include="Shared\DependencyInjection\" />
+    <Folder Include="Shared\AI\" />
+    <Folder Include="Shared\VectorStore\" />
+    <Folder Include="Shared\Persistence\" />
+  </ItemGroup>
+
 </Project>
