@@ -1,4 +1,8 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
   <Folder Name="/src/" />
   <Folder Name="/src/01.Domain/">
     <Project Path="src/01.Core/KnowledgeHub.MiniRag.Core.Applicaiton/KnowledgeHub.MiniRag.Core.Applicaiton.csproj" Id="c9182bac-1b71-4345-af8f-493cee50b5e6" />
