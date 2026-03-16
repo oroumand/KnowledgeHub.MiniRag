@@ -18,9 +18,10 @@
     <Folder Include="Documents\Queries\" />
     <Folder Include="Search\Abstractions\" />
     <Folder Include="Search\Queries\" />
-    <Folder Include="Shared\Abstractions\AI\" />
-    <Folder Include="Shared\Abstractions\Abstractions\" />
-    <Folder Include="Shared\Abstractions\VectorStore\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.5" />
   </ItemGroup>
 
 </Project>
