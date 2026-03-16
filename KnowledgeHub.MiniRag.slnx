@@ -4,7 +4,7 @@
     <File Path="Directory.Packages.props" />
   </Folder>
   <Folder Name="/src/" />
-  <Folder Name="/src/01.Domain/">
+  <Folder Name="/src/01.Core/">
     <Project Path="src/01.Core/KnowledgeHub.MiniRag.Core.Applicaiton/KnowledgeHub.MiniRag.Core.Applicaiton.csproj" Id="c9182bac-1b71-4345-af8f-493cee50b5e6" />
     <Project Path="src/01.Core/KnowledgeHub.MiniRag.Core.Domain/KnowledgeHub.MiniRag.Core.Domain.csproj" Id="4ac5f34f-95dc-4d81-b39c-b1bd6f0920a9" />
   </Folder>

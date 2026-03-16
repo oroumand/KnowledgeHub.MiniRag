@@ -1,19 +1,29 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <!--<PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>-->
+  
 
   <ItemGroup>
     <Folder Include="Chat\AI\" />
-    <Folder Include="Documents\Persistence\Configurations\" />
     <Folder Include="Search\VectorStore\" />
-    <Folder Include="Shared\DependencyInjection\" />
     <Folder Include="Shared\AI\" />
     <Folder Include="Shared\VectorStore\" />
-    <Folder Include="Shared\Persistence\" />
+  </ItemGroup>
+
+  
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
+  </ItemGroup>
+
+  
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\01.Core\KnowledgeHub.MiniRag.Core.Applicaiton\KnowledgeHub.MiniRag.Core.Applicaiton.csproj" />
+    <ProjectReference Include="..\..\01.Core\KnowledgeHub.MiniRag.Core.Domain\KnowledgeHub.MiniRag.Core.Domain.csproj" />
   </ItemGroup>
 
 </Project>

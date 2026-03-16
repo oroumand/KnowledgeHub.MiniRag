@@ -1,0 +1,28 @@
+﻿using KnowledgeHub.MiniRag.Core.Applicaiton.Shared.Abstractions.Data;
+using KnowledgeHub.MiniRag.Infras.SqlServer.Shared.Persistence;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace KnowledgeHub.MiniRag.Infras.SqlServer.Shared.DependencyInjection;
+
+public static class InfrastructureServiceRegistration
+{
+    public static IServiceCollection AddInfrastructure(
+        this IServiceCollection services,
+        IConfiguration configuration)
+    {
+        var connectionString = configuration.GetConnectionString("DefaultConnection")
+            ?? throw new InvalidOperationException("Connection string 'DefaultConnection' was not found.");
+
+        services.AddDbContext<ApplicationDbContext>(options =>
+        {
+            options.UseSqlServer(connectionString);
+        });
+
+        services.AddScoped<IApplicationDbContext>(provider =>
+            provider.GetRequiredService<ApplicationDbContext>());
+
+        return services;
+    }
+}
