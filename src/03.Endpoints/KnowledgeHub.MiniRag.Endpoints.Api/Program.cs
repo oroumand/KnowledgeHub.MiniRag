@@ -1,3 +1,4 @@
+using KnowledgeHub.MiniRag.Infras.AI.Shared.DependencyInjection;
 using KnowledgeHub.MiniRag.Infras.SqlServer.Shared.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -5,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddAI(builder.Configuration);
 
 var app = builder.Build();
 

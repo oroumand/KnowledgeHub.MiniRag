@@ -2,7 +2,7 @@
 
 
   <ItemGroup>
-	  <PackageReference Include="Microsoft.AspNetCore.OpenApi"/>
+	  <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -12,6 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\01.Core\KnowledgeHub.MiniRag.Core.Applicaiton\KnowledgeHub.MiniRag.Core.Applicaiton.csproj" />
     <ProjectReference Include="..\..\01.Core\KnowledgeHub.MiniRag.Core.Domain\KnowledgeHub.MiniRag.Core.Domain.csproj" />
+    <ProjectReference Include="..\..\02.Infras\KnowledgeHub.MiniRag.Infras.AI\KnowledgeHub.MiniRag.Infras.AI.csproj" />
     <ProjectReference Include="..\..\02.Infras\KnowledgeHub.MiniRag.Infras.SqlServer\KnowledgeHub.MiniRag.Infras.SqlServer.csproj" />
   </ItemGroup>
 
