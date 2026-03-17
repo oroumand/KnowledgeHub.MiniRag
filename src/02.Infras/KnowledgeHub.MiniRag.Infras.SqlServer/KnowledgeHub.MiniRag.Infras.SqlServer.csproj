@@ -5,7 +5,6 @@
   <ItemGroup>
     <Folder Include="Chat\AI\" />
     <Folder Include="Search\VectorStore\" />
-    <Folder Include="Shared\AI\" />
     <Folder Include="Shared\VectorStore\" />
   </ItemGroup>
 

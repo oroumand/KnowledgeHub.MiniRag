@@ -2,7 +2,7 @@
 using KnowledgeHub.MiniRag.Core.Applicaiton.Shared.Models;
 using System.Text.RegularExpressions;
 
-namespace KnowledgeHub.MiniRag.Infras.AI;
+namespace KnowledgeHub.MiniRag.Infras.AI.Shared.AI;
 
 public sealed class SimpleTextChunkingService : ITextChunkingService
 {

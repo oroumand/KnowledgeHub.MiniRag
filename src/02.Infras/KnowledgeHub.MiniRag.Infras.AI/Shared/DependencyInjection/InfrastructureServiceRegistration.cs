@@ -1,4 +1,5 @@
 ﻿using KnowledgeHub.MiniRag.Core.Applicaiton.Shared.Abstractions.AI;
+using KnowledgeHub.MiniRag.Infras.AI.Shared.AI;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,7 +12,10 @@ public static class AIServiceRegistration
         IConfiguration configuration)
     {
         services.AddScoped<ITextChunkingService, SimpleTextChunkingService>();
+        services.Configure<OpenAiOptions>(
+          configuration.GetSection(OpenAiOptions.SectionName));
 
+        services.AddScoped<IEmbeddingService, OpenAiEmbeddingService>();
         return services;
     }
 }
