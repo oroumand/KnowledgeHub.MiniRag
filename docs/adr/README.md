@@ -13,3 +13,4 @@ and their consequences.
 - ADR-004: Use OpenAI embeddings and chat models for RAG pipeline
 - ADR-005: Organize code by feature within architectural layers
 - ADR-006: Use DbSet directly in Application layer instead of Repository pattern
+- ADR-007: Separate AI infrastructure from SQL Server infrastructure
