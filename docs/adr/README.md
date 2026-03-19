@@ -14,3 +14,4 @@ and their consequences.
 - ADR-005: Organize code by feature within architectural layers
 - ADR-006: Use DbSet directly in Application layer instead of Repository pattern
 - ADR-007: Separate AI infrastructure from SQL Server infrastructure
+- ADR-008: Allow direct read-only queries in Endpoints for debug inspection endpoints
