@@ -37,3 +37,12 @@ Content-Type: application/json
   "query": "Why can layered architecture slow development?",
   "topK": 3
 }
+
+
+###
+POST {{Host}}/chat/ask
+Content-Type: application/json
+{
+  "question": "What is a downside of layered architecture based on the provided notes?",
+  "topK": 3
+}

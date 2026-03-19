@@ -1,4 +1,5 @@
-﻿using KnowledgeHub.MiniRag.Core.Applicaiton.Documents.Commands;
+﻿using KnowledgeHub.MiniRag.Core.Applicaiton.Chat.Commands;
+using KnowledgeHub.MiniRag.Core.Applicaiton.Documents.Commands;
 using KnowledgeHub.MiniRag.Core.Applicaiton.Search.Queries;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -10,6 +11,7 @@ public static class ApplicationServiceRegistration
     {
         services.AddScoped<DocumentIngestionService>();
         services.AddScoped<SemanticSearchService>();
+        services.AddScoped<RagChatService>();
         return services;
     }
 }

@@ -7,7 +7,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Chat\Commands\" />
     <Folder Include="Chat\Abstractions\" />
     <Folder Include="Documents\Abstractions\" />
     <Folder Include="Documents\Queries\" />

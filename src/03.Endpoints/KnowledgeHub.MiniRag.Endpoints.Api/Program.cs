@@ -1,5 +1,6 @@
 using KnowledgeHub.MiniRag.Core.Applicaiton.Documents.Commands;
 using KnowledgeHub.MiniRag.Core.Applicaiton.Shared.DependencyInjection;
+using KnowledgeHub.MiniRag.Endpoints.Api.Chat.Endpoints;
 using KnowledgeHub.MiniRag.Endpoints.Api.Documents.Endpoints;
 using KnowledgeHub.MiniRag.Endpoints.Api.Search.Endpoints;
 using KnowledgeHub.MiniRag.Infras.AI.Shared.DependencyInjection;
@@ -36,4 +37,5 @@ app.MapGet("/", () => Results.Ok(new
 
 app.MapDocumentEndpoints("/documents");
 app.MapSearchEndpoints("/search");
+app.MapChatEndpoints("/chat");
 app.Run();

@@ -19,7 +19,7 @@ public static class AIServiceRegistration
           configuration.GetSection(OpenAiOptions.SectionName));
 
         services.AddScoped<IEmbeddingService, OpenAiEmbeddingService>();
-
+        services.AddScoped<IChatCompletionService, OpenAiChatCompletionService>();
 
         services.Configure<QdrantOptions>(
            configuration.GetSection(QdrantOptions.SectionName));

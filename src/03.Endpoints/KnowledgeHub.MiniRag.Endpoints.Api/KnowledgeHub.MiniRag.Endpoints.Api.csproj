@@ -23,8 +23,6 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Chat\Contracts\" />
-    <Folder Include="Chat\Endpoints\" />
     <Folder Include="Shared\Extensions\" />
   </ItemGroup>
 
