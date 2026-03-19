@@ -1,6 +1,26 @@
-@KnowledgeHub.MiniRag.Endpoints.Api_HostAddress = http://localhost:5165
+@Host = https://localhost:7001
 
-GET {{KnowledgeHub.MiniRag.Endpoints.Api_HostAddress}}/weatherforecast/
-Accept: application/json
+GET {{Host}}/
 
 ###
+
+POST {{Host}}/documents
+Content-Type: application/json
+
+{
+  "title": "Layered Architecture Notes",
+  "rawText": "Layered architecture is one of the most common patterns in enterprise systems.\n\nIt organizes code into layers, usually presentation, application, domain, and infrastructure.\n\nA major downside is that changes may need to cross many layers, which can slow delivery.",
+  "sourceType": "Book",
+  "author": "Practice Notes"
+}
+
+###
+
+POST {{Host}}/documents
+Content-Type: application/json
+
+{
+  "title": "",
+  "rawText": "short",
+  "sourceType": "Book"
+}

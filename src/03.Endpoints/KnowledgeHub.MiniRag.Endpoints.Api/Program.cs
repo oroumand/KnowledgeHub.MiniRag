@@ -1,12 +1,23 @@
+using KnowledgeHub.MiniRag.Core.Applicaiton.Documents.Commands;
+using KnowledgeHub.MiniRag.Core.Applicaiton.Shared.DependencyInjection;
+using KnowledgeHub.MiniRag.Endpoints.Api.Documents.Endpoints;
 using KnowledgeHub.MiniRag.Infras.AI.Shared.DependencyInjection;
 using KnowledgeHub.MiniRag.Infras.SqlServer.Shared.DependencyInjection;
+using System.Text.Json.Serialization;
 var builder = WebApplication.CreateBuilder(args);
 
 
-builder.Services.AddControllers();
 builder.Services.AddOpenApi();
+builder.Services.AddValidation();
+builder.Services.AddProblemDetails();
+builder.Services.ConfigureHttpJsonOptions(options =>
+{
+    options.SerializerOptions.Converters.Add(new JsonStringEnumConverter());
+});
+
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddAI(builder.Configuration);
+builder.Services.AddApplicationServices();
 
 var app = builder.Build();
 
@@ -22,6 +33,5 @@ app.MapGet("/", () => Results.Ok(new
     Status = "Running"
 }));
 
-app.MapControllers();
-
+app.MapDocumentEndpoints("/documents");
 app.Run();

@@ -27,8 +27,6 @@
     <Folder Include="Chat\Endpoints\" />
     <Folder Include="Search\Contracts\" />
     <Folder Include="Search\Endpoints\" />
-    <Folder Include="Documents\Endpoints\" />
-    <Folder Include="Documents\Contracts\" />
     <Folder Include="Shared\Extensions\" />
   </ItemGroup>
 

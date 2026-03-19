@@ -13,4 +13,5 @@ public interface IApplicationDbContext
     DbSet<DocumentChunk> DocumentChunks { get; }
 
     Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
+    int SaveChanges();
 }
