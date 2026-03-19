@@ -42,6 +42,8 @@ internal sealed class QdrantSearchRequest
 
     [JsonPropertyName("limit")]
     public int Limit { get; set; }
+    [JsonPropertyName("with_payload")]
+    public bool WithPayload { get; set; } = true;
 }
 internal sealed class QdrantSearchResponse
 {

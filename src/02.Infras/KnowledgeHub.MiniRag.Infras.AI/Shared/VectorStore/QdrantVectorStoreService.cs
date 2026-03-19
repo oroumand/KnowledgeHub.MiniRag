@@ -127,7 +127,8 @@ public sealed class QdrantVectorStoreService : IVectorStoreService
         var body = new QdrantSearchRequest
         {
             Vector = queryVector,
-            Limit = topK
+            Limit = topK,
+            WithPayload = true
         };
 
         var response = await _httpClient.PostAsJsonAsync(
@@ -147,6 +148,7 @@ public sealed class QdrantVectorStoreService : IVectorStoreService
         {
             if (item.Payload is null)
             {
+                _logger.LogWarning("Qdrant search result returned without payload for point id {PointId}", item.Id);
                 continue;
             }
 

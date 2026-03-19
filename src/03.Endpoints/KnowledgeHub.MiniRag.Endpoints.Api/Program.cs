@@ -1,6 +1,7 @@
 using KnowledgeHub.MiniRag.Core.Applicaiton.Documents.Commands;
 using KnowledgeHub.MiniRag.Core.Applicaiton.Shared.DependencyInjection;
 using KnowledgeHub.MiniRag.Endpoints.Api.Documents.Endpoints;
+using KnowledgeHub.MiniRag.Endpoints.Api.Search.Endpoints;
 using KnowledgeHub.MiniRag.Infras.AI.Shared.DependencyInjection;
 using KnowledgeHub.MiniRag.Infras.SqlServer.Shared.DependencyInjection;
 using System.Text.Json.Serialization;
@@ -34,4 +35,5 @@ app.MapGet("/", () => Results.Ok(new
 }));
 
 app.MapDocumentEndpoints("/documents");
+app.MapSearchEndpoints("/search");
 app.Run();

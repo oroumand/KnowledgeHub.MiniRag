@@ -8,7 +8,7 @@ GET {{Host}}/documents
 ###
 GET {{Host}}/documents/2f3357b8-00a9-44f4-b9cd-a9818d80e0b8
 
-
+###
 POST {{Host}}/documents
 Content-Type: application/json
 
@@ -28,4 +28,12 @@ Content-Type: application/json
   "title": "",
   "rawText": "short",
   "sourceType": "Book"
+}
+
+###
+POST {{Host}}/search/semantic
+Content-Type: application/json
+ {
+  "query": "Why can layered architecture slow development?",
+  "topK": 3
 }
